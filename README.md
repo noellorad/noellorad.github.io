@@ -45,7 +45,7 @@ Brief description of the project:
 - **Key Features:** Authentication, integrations with external APIs, responsive design
 - **Repositorio:** (https://github.com/Aurora-Technologies-GPS/BackEndCombinado.git)
 
-### 1️⃣ [full-stack CESVA sensor](https://github.com/Aurora-Technologies-GPS/full-stack-Sensors_CESVA-SmartCitizen.git)
+### 1️⃣ [Full-stack CESVA sensor](https://github.com/Aurora-Technologies-GPS/full-stack-Sensors_CESVA-SmartCitizen.git)
 Brief description of the project:  
 - **Technologies used:** EJS, Node.js, MongoDB
 - **Key Features:** Authentication, integrations with external APIs, responsive design, ChartJs
@@ -54,7 +54,7 @@ Brief description of the project:
 
 ## 🌐 Connect with me
 
-- **LinkedIn:** [Tu perfil de LinkedIn](https://www.linkedin.com/in/noel-lora-diaz-ab8a87168)
+- **LinkedIn:** (https://www.linkedin.com/in/noel-lora-diaz-ab8a87168)
 - **Email:** [noelloradp@gmail.com]
 - **Portafolio:** (https://noellorad.github.io/)
 
