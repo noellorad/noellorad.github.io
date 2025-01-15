@@ -56,7 +56,7 @@ Brief description of the project:
 
 - **LinkedIn:** (https://www.linkedin.com/in/noel-lora-diaz-ab8a87168)
 - **Email:** [noelloradp@gmail.com]
-- **Phone:** [18094395891](tel:+18094395891)
+- **Phone:** [ +1 809-439-5891 ]( tel:+18094395891 )
 - **Portafolio:** (https://noellorad.github.io/)
 
 ---
