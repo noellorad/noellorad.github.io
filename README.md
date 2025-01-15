@@ -23,7 +23,12 @@ years of experience in the field, I have honed my expertise in front-end and bac
 - **tools and platforms:** Git, AWS, Linux
 - **Others:** APIs REST, ágil,
 
----
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=androidstudio,c,java,php,py,css,html,js,nodejs,mysql,git,github,materialui,postman,eclipse,vscode,bash,aws,react,vue,bootstrap,npm,postgres,ubuntu,windows,linux&perline=12" alt="Tecnologías" />
+  </a>
+</p>
+
 
 ## 📂 Most Featured Web Projects
 
@@ -53,6 +58,16 @@ Brief description of the project:
 
 
 ## 🌐 Connect with me
+
+<p align="left">
+
+  <a href="mailto:noelloradp@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email de Noel" />
+  </a>
+  <a href="https://wa.me/+18094395891" target="_blank">
+  <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp de Noel" />
+</a>
+</p>
 
 - **LinkedIn:** (https://www.linkedin.com/in/noel-lora-diaz-ab8a87168)
 - **Email:** [noelloradp@gmail.com]
