@@ -1,58 +1,64 @@
-# 🌟 [Tu Nombre Completo] - Portafolio de Desarrollador
+# 🌟 Noel Lora - App developer
 
-¡Hola! 👋 Bienvenido a mi portafolio de desarrollador. Aquí encontrarás información sobre mí, mis habilidades y los proyectos en los que he trabajado. Siempre estoy buscando oportunidades para aprender y colaborar en nuevos desafíos.
-
----
-
-## 🚀 Sobre mí
-Soy un desarrollador apasionado por [tu área de interés, por ejemplo: desarrollo web, ciencia de datos, inteligencia artificial]. Me encanta resolver problemas complejos con soluciones simples y efectivas. Mi enfoque principal es [tu enfoque principal, por ejemplo: crear aplicaciones robustas y escalables o diseñar experiencias de usuario fluidas].
-
-🌍 **Ubicación:** República Dominicana  
-💻 **Lenguajes principales:** JavaScript, Python  
-📚 **Aprendiendo actualmente:** [Lenguaje/tecnología que estás aprendiendo, como TypeScript o Machine Learning]  
-🎯 **Objetivo:** [Tu meta profesional, como mejorar en desarrollo backend o contribuir a proyectos de código abierto]
+¡Hola! 👋 Welcome to my developer portfolio. Here you will find information about me, my skills and the projects I have worked on. I am always looking for opportunities to learn and collaborate on new challenges.
 
 ---
 
-## 🛠️ Habilidades
-- **Lenguajes de programación:** JavaScript, Python, [otros lenguajes]
-- **Frameworks y librerías:** React, Node.js, Express, [otros frameworks]
-- **Bases de datos:** MongoDB, MySQL, PostgreSQL
-- **Herramientas y plataformas:** Git, Docker, AWS, Linux
-- **Otros:** APIs REST, desarrollo ágil, pruebas automatizadas
+## 🚀 About Me
+I am a passionate full stack web developer with a strong foundation in software development and networking. I hold a degree in Software 
+Engineering from O&M University, complemented by various certifications in programming, database management, and network security. With 5 
+years of experience in the field, I have honed my expertise in front-end and back-end development, as well as IT and networking solutions. 
+
+🌍 **Location:** República Dominicana  
+💻 **Main Programming Languages:** Nodejs, JavaScript, Python  
+📚 **Currently learning:**  React 
+🎯 **Goal :** My professional goal is to grow as a full-stack developer, improving both backend and frontend skills to build complete, scalable, and optimized applications. I also aim to contribute to open-source projects to enhance my skills, collaborate with other developers, and give back to the community.
 
 ---
 
-## 📂 Proyectos Destacados
-
-### 1️⃣ [Nombre del Proyecto 1](https://github.com/tuusuario/proyecto1)
-Descripción breve del proyecto:  
-- **Tecnologías utilizadas:** [React, Node.js, MongoDB]  
-- **Características clave:** [Autenticación, integraciones con APIs externas, diseño responsive]  
-- **Repositorio:** [Enlace al repositorio](https://github.com/tuusuario/proyecto1)
-
-### 2️⃣ [Nombre del Proyecto 2](https://github.com/tuusuario/proyecto2)
-Descripción breve del proyecto:  
-- **Tecnologías utilizadas:** [Python, Flask, PostgreSQL]  
-- **Características clave:** [Análisis de datos, panel de administración, visualizaciones interactivas]  
-- **Repositorio:** [Enlace al repositorio](https://github.com/tuusuario/proyecto2)
-
-### 3️⃣ [Nombre del Proyecto 3](https://github.com/tuusuario/proyecto3)
-Descripción breve del proyecto:  
-- **Tecnologías utilizadas:** [HTML, CSS, JavaScript]  
-- **Características clave:** [Animaciones personalizadas, optimización para SEO]  
-- **Repositorio:** [Enlace al repositorio](https://github.com/tuusuario/proyecto3)
+## 🛠️ Skills
+- **Programming Languages:** Nodejs, JavaScript, Python, PLC, Arduino, Java
+- **Frameworks and librerías:** Vuejs Nodejs, Express, Boostrap
+- **DataBase:** MongoDB, MySQL, PostgreSQL
+- **tools and platforms:** Git, AWS, Linux
+- **Others:** APIs REST, ágil,
 
 ---
 
-## 🌐 Conéctate conmigo
+## 📂 Most Featured Web Projects
 
-- **LinkedIn:** [Tu perfil de LinkedIn](https://linkedin.com/in/tuusuario)
-- **Twitter:** [Tu perfil de Twitter](https://twitter.com/tuusuario)
-- **Email:** [tuemail@ejemplo.com]
-- **Portafolio:** [Enlace a tu portafolio personal](https://tuportafolio.com)
+### 1️⃣ [E-Delivery](https://github.com/Aurora-Technologies-GPS/edelivery.git)
+Brief description of the project:  
+- **Technologies used:** Vuejs, Node.js, PostgreSQL
+- **Key Features:** Authentication, integrations with external APIs, responsive design, ChartJs
+- **Repositorio:** (https://github.com/Aurora-Technologies-GPS/BackEndCombinado.git)
+
+### 1️⃣ [Transfers](https://github.com/Aurora-Technologies-GPS/transfers.git)
+Brief description of the project:  
+- **Technologies used:** Vuejs, sockets
+- **Key Features:** Authentication, integrations with external APIs, responsive design, ChartJs
+---
+
+### 1️⃣ [Notification Manager](https://github.com/Aurora-Technologies-GPS/notificationManager.git)
+Brief description of the project:  
+- **Technologies used:** Vuejs, Node.js, PostgreSQL
+- **Key Features:** Authentication, integrations with external APIs, responsive design
+- **Repositorio:** (https://github.com/Aurora-Technologies-GPS/BackEndCombinado.git)
+
+### 1️⃣ [full-stack CESVA sensor](https://github.com/Aurora-Technologies-GPS/full-stack-Sensors_CESVA-SmartCitizen.git)
+Brief description of the project:  
+- **Technologies used:** EJS, Node.js, MongoDB
+- **Key Features:** Authentication, integrations with external APIs, responsive design, ChartJs
+- **Repositorio:** (https://github.com/Aurora-Technologies-GPS/SmartCitizen_me_Sensor_mongodb_ResAPI.git)
+
+
+## 🌐 Connect with me
+
+- **LinkedIn:** [Tu perfil de LinkedIn](https://www.linkedin.com/in/noel-lora-diaz-ab8a87168)
+- **Email:** [noelloradp@gmail.com]
+- **Portafolio:** (https://noellorad.github.io/)
 
 ---
 
-## 📅 Disponibilidad
-Estoy disponible para colaboraciones, freelancing o roles de tiempo completo. ¡No dudes en contactarme! 🚀
+## 📅 Availability
+I am available for collaborations, freelancing or full-time roles. Don't hesitate to contact me! 🚀
