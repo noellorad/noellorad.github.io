@@ -1,46 +1,311 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noel Lora Diaz — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
+    :root {
+      --navy: #0D1B2A;
+      --teal: #00BFA6;
+      --teal-light: #e1f5ee;
+      --teal-dark: #0F6E56;
+      --bg: #ffffff;
+      --bg2: #f6f8fa;
+      --text: #1a2637;
+      --text2: #4a5568;
+      --text3: #8a95a3;
+      --border: rgba(0,0,0,0.1);
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
 
-        .card-section {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-            border: none;
-        }
-        .card-section:hover {
-            transform: scale(1.05);
-        }
-        .btn-download {
-            color: white;
-            background-color: #cccabd;
-        }
-        
-    </style>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1117;
+        --bg2: #1a1f2e;
+        --text: #f0f4f8;
+        --text2: #a0aab8;
+        --text3: #6b7688;
+        --border: rgba(255,255,255,0.1);
+        --teal-light: #0a2e24;
+        --teal-dark: #5DCAA5;
+      }
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg2);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card-wrap {
+      background: var(--bg);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      max-width: 540px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 88px; height: 88px;
+      border-radius: 50%;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.25rem;
+      border: 3px solid var(--teal);
+    }
+    .avatar span { font-size: 26px; font-weight: 600; color: #fff; letter-spacing: 1px; }
+
+    h1 { font-size: 26px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+    .tagline { font-size: 14px; color: var(--teal); font-weight: 500; letter-spacing: 0.4px; margin-bottom: 1.5rem; }
+
+    .pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; margin-bottom: 0; }
+    .pill {
+      font-size: 12px; padding: 4px 12px;
+      border-radius: 20px;
+      background: var(--bg2); color: var(--text2);
+      border: 1px solid var(--border);
+    }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+    .section { padding: 1.5rem 2rem; }
+    .section-label {
+      font-size: 11px; font-weight: 600; color: var(--text3);
+      letter-spacing: 1.5px; text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; }
+    .info-card {
+      background: var(--bg2); border-radius: var(--radius-sm);
+      padding: 12px 14px; border: 1px solid var(--border);
+    }
+    .info-card .ic { font-size: 18px; color: var(--teal); margin-bottom: 6px; }
+    .info-card .il { font-size: 11px; color: var(--text3); margin-bottom: 2px; }
+    .info-card .iv { font-size: 13px; font-weight: 500; color: var(--text); }
+
+    .exp-item { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .exp-item:last-child { border-bottom: none; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); margin-top: 5px; flex-shrink: 0; }
+    .dot.old { background: var(--border); }
+    .exp-role { font-size: 14px; font-weight: 500; color: var(--text); }
+    .badge-now {
+      font-size: 11px; background: var(--teal-light); color: var(--teal-dark);
+      padding: 2px 8px; border-radius: 20px; font-weight: 500; margin-left: 6px;
+    }
+    .exp-co { font-size: 13px; color: var(--text2); margin-top: 2px; }
+    .exp-date { font-size: 12px; color: var(--text3); margin-top: 2px; }
+
+    .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .cert-tag {
+      font-size: 12px; font-weight: 500; color: var(--text);
+      padding: 8px 10px;
+      background: var(--bg2); border-radius: 0;
+      border-left: 2px solid var(--teal);
+      padding-left: 10px;
+    }
+    .cert-inst { font-size: 11px; color: var(--text3); margin-top: 2px; font-weight: 400; }
+
+    .soft-row { display: flex; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--border); align-items: flex-start; }
+    .soft-row:last-child { border-bottom: none; }
+    .soft-row .si { font-size: 17px; color: var(--teal); flex-shrink: 0; margin-top: 1px; }
+    .soft-title { font-size: 13px; font-weight: 500; color: var(--text); }
+    .soft-desc { font-size: 12px; color: var(--text2); margin-top: 2px; line-height: 1.5; }
+
+    .cta-area { padding: 1.5rem 2rem 2rem; display: flex; flex-direction: column; gap: 10px; }
+    .btn {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 14px; border-radius: var(--radius);
+      font-size: 14px; font-weight: 500; cursor: pointer;
+      text-decoration: none; border: none; transition: opacity 0.15s;
+    }
+    .btn:hover { opacity: 0.85; }
+    .btn-dark { background: var(--navy); color: #fff; }
+    .btn-light { background: var(--bg2); color: var(--text); border: 1px solid var(--border); }
+
+    .footer-links {
+      padding: 1rem 2rem 2rem;
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;
+    }
+    .footer-links a {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 13px; color: var(--text2); text-decoration: none;
+    }
+    .footer-links a i { font-size: 16px; color: var(--teal); }
+    .footer-links a:hover { color: var(--teal); }
+  </style>
 </head>
-<body class="container">
-         <section  class="mt-5">
-            <div class="card card-section">
-                <div class="card-body">
-                    <h5 class="card-title">My resume</h5>
-                    <p class="card-text">You can Download my Resume for more Details.</p>
-                    <a href="Noel Lora_29_enero_2025.pdf" download class="btn btn-download">Download Resume</a>
-                    <a href="Noel Lora_29_enero_2025.pdf"  class="btn btn-download">Online Resume</a>
-                </div>
-            </div>
+<body>
+  <div class="card-wrap">
 
-        </section>
+    <!-- Hero -->
+    <div class="hero">
+      <div class="avatar"><span>NL</span></div>
+      <h1>Noel Lora Diaz</h1>
+      <p class="tagline">Full Stack Developer · Cybersecurity Professional</p>
+      <div class="pills">
+        <span class="pill">Python</span>
+        <span class="pill">Vue.js</span>
+        <span class="pill">Node.js</span>
+        <span class="pill">Java</span>
+        <span class="pill">Ethical Hacking</span>
+        <span class="pill">Power Apps</span>
+        <span class="pill">Power Automate</span>
+        <span class="pill">SQL / DBA</span>
+        <span class="pill">Networking</span>
+        <span class="pill">Fortinet NSE</span>
+      </div>
+    </div>
 
-    <!-- Bootstrap JS y jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <hr />
+
+    <!-- Contact -->
+    <div class="section" style="padding-bottom: 1rem;">
+      <div class="section-label">Contact</div>
+      <div style="display:flex; flex-wrap:wrap; gap:14px;">
+        <a href="mailto:noelloradp@gmail.com" style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text2);text-decoration:none;">
+          <i class="ti ti-mail" style="color:var(--teal);font-size:16px;"></i>noelloradp@gmail.com
+        </a>
+        <a href="tel:8094395891" style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text2);text-decoration:none;">
+          <i class="ti ti-phone" style="color:var(--teal);font-size:16px;"></i>809-439-5891
+        </a>
+        <a href="https://linkedin.com/in/noel-lora-diaz-ab8a87168" target="_blank" style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text2);text-decoration:none;">
+          <i class="ti ti-brand-linkedin" style="color:var(--teal);font-size:16px;"></i>LinkedIn
+        </a>
+        <a href="https://github.com/noellorad" target="_blank" style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text2);text-decoration:none;">
+          <i class="ti ti-brand-github" style="color:var(--teal);font-size:16px;"></i>github.com/noellorad
+        </a>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- At a glance -->
+    <div class="section">
+      <div class="section-label">At a glance</div>
+      <div class="grid-4">
+        <div class="info-card"><div class="ic"><i class="ti ti-code"></i></div><div class="il">Experience</div><div class="iv">10+ years</div></div>
+        <div class="info-card"><div class="ic"><i class="ti ti-building"></i></div><div class="il">Current role</div><div class="iv">Software Developer</div></div>
+        <div class="info-card"><div class="ic"><i class="ti ti-map-pin"></i></div><div class="il">Location</div><div class="iv">Santo Domingo</div></div>
+        <div class="info-card"><div class="ic"><i class="ti ti-language"></i></div><div class="il">Languages</div><div class="iv">ES · EN</div></div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Experience -->
+    <div class="section">
+      <div class="section-label">Experience</div>
+      <div class="exp-item">
+        <div class="dot"></div>
+        <div>
+          <div class="exp-role">Software Developer <span class="badge-now">Now</span></div>
+          <div class="exp-co">Domitab (Hail and Cotton)</div>
+          <div class="exp-date">2025 – Present</div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="dot old"></div>
+        <div>
+          <div class="exp-role">Fullstack Web Developer</div>
+          <div class="exp-co">Aurora Technologies</div>
+          <div class="exp-date">2022 – 2024</div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="dot old"></div>
+        <div>
+          <div class="exp-role">IT Support Specialist</div>
+          <div class="exp-co">QTEK Solutions</div>
+          <div class="exp-date">2021 – 2022</div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="dot old"></div>
+        <div>
+          <div class="exp-role">Backend / Frontend Developer (Freelance)</div>
+          <div class="exp-co">Self-Employed</div>
+          <div class="exp-date">2019 – Present</div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="dot old"></div>
+        <div>
+          <div class="exp-role">IT Support · Electronic Technician · IT Tech</div>
+          <div class="exp-co">ERC · BEPENSA · Anso SRL</div>
+          <div class="exp-date">2015 – 2020</div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Certifications -->
+    <div class="section">
+      <div class="section-label">Diplomas & certifications</div>
+      <div class="cert-grid">
+        <div class="cert-tag">Hacking Ético<div class="cert-inst">ITLA</div></div>
+        <div class="cert-tag">Herramientas de Ciberseguridad<div class="cert-inst">ITLA</div></div>
+        <div class="cert-tag">Gestión de Incidentes<div class="cert-inst">ITLA</div></div>
+        <div class="cert-tag">Análisis de Sistemas<div class="cert-inst">ITLA</div></div>
+        <div class="cert-tag">Prog. Avanzada en Python<div class="cert-inst">ITLA</div></div>
+        <div class="cert-tag">Admin. de Base de Datos<div class="cert-inst">ITLA</div></div>
+        <div class="cert-tag">NSE 1 & NSE 2<div class="cert-inst">Fortinet</div></div>
+        <div class="cert-tag">Técnico en Redes / Seguridad<div class="cert-inst">Capacítate para el Empleo</div></div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Soft Skills -->
+    <div class="section">
+      <div class="section-label">Soft skills</div>
+      <div class="soft-row"><i class="ti ti-bulb si"></i><div><div class="soft-title">Problem-solving & analytical thinking</div><div class="soft-desc">Identifies root causes and designs effective solutions.</div></div></div>
+      <div class="soft-row"><i class="ti ti-headset si"></i><div><div class="soft-title">Customer service orientation</div><div class="soft-desc">Technical and non-technical support via phone, email, and in-person.</div></div></div>
+      <div class="soft-row"><i class="ti ti-arrows-shuffle si"></i><div><div class="soft-title">Adaptability & multidisciplinary approach</div><div class="soft-desc">Works across domains, picking up new skills fast.</div></div></div>
+      <div class="soft-row"><i class="ti ti-users si"></i><div><div class="soft-title">Teamwork & collaboration</div><div class="soft-desc">Cross-functional teams, fostering cooperation to hit goals.</div></div></div>
+      <div class="soft-row"><i class="ti ti-clock si"></i><div><div class="soft-title">Time management & organization</div><div class="soft-desc">Prioritizes tasks and consistently meets deadlines.</div></div></div>
+      <div class="soft-row"><i class="ti ti-rocket si"></i><div><div class="soft-title">Continuous learning mindset</div><div class="soft-desc">Stays current with emerging technologies and best practices.</div></div></div>
+    </div>
+
+    <hr />
+
+    <!-- CTA -->
+    <div class="cta-area">
+      <div class="section-label" style="margin-bottom:10px;">My CV</div>
+      <a href="Noel_Lora_CV_2025.pdf" download class="btn btn-dark">
+        <i class="ti ti-download"></i> Download CV (PDF)
+      </a>
+      <a href="Noel_Lora_CV_2025.pdf" target="_blank" class="btn btn-light">
+        <i class="ti ti-eye"></i> View CV online
+      </a>
+    </div>
+
+    <hr />
+
+    <div class="footer-links">
+      <a href="mailto:noelloradp@gmail.com"><i class="ti ti-mail"></i>noelloradp@gmail.com</a>
+      <a href="https://linkedin.com/in/noel-lora-diaz-ab8a87168" target="_blank"><i class="ti ti-brand-linkedin"></i>LinkedIn</a>
+      <a href="https://github.com/noellorad" target="_blank"><i class="ti ti-brand-github"></i>GitHub</a>
+    </div>
+
+  </div>
 </body>
 </html>
